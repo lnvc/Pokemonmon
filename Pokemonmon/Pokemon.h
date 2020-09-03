@@ -2,6 +2,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Animation.h"
+#include "Collider.h"
 
 using namespace std;
 
@@ -12,10 +13,11 @@ public:
 	~Pokemon();
 
 	void Draw(sf::RenderWindow& window);
+	Collider GetCollider() { return Collider(body); }
 
 private:
 	string name;
-	//int pokedexNumber;
+	// int pokedexNumber;
 	// PokemonAnimation pokemonAnimation;
 	sf::RectangleShape body;
 };
