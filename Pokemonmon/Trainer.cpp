@@ -6,7 +6,7 @@ Trainer::Trainer(sf::Texture* texture, sf::Vector2u spriteCount, float switchTim
 	this->speed = speed;
 	col = 0;
 
-	body.setSize(sf::Vector2f(100.0f, 100.0f));
+	body.setSize(sf::Vector2f(48.0f, 48.0f));
 	body.setPosition(206.0f, 206.0f);
 	body.setTexture(texture);
 	body.setOrigin(50.0f, 50.0f);
